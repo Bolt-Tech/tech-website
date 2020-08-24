@@ -1,0 +1,146 @@
+@import "../Base/header";
+@import "../Base/footer";
+@import "../Base/layout";
+
+/*Required Inputs*/
+
+#contactForm input:invalid {
+  border: 1px solid #000000;
+}
+
+#contactForm input:invalid:required {
+  background-image: none;
+}
+
+#contactForm input.invalidInput {
+  border: 2px dashed red;
+}
+
+#contactForm input:invalidInput:required {
+  background-image: linear-gradient(to right, pink, lightgreen);
+}
+
+#contactForm input:valid {
+  border: 2px solid black;
+}
+
+.error {
+  //border: 2px solid crimson;
+  background: #af14145d;
+  color: whitesmoke;
+}
+
+/*Required Inputs End*/
+
+/*Main Contact*/
+.contact-title,
+.contact-desp {
+  text-align: center;
+}
+
+/*Contact Title*/
+.contact-title {
+  font-size: 2.5vw;
+}
+
+/*Contact Description*/
+.contact-desp {
+  font-size: 1.5vw;
+}
+
+/* Style inputs */
+#contactForm input[type=text],
+select,
+textarea,
+input[type=tel] {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+  font-size: 1.2vw;
+}
+
+/*Country Selection*/
+#contactForm .select-country {
+  margin: 15px 0 0 0;
+}
+
+/*Subject text area*/
+#subject {
+  font-size: 1.2vw;
+}
+
+#contactForm input[type=submit] {
+  background: #003b00;
+  background: linear-gradient(0deg, #003b00 0%, #65fd2d 100%); 
+  color: #f6fdb1;
+  font-size: 1.1vw;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+
+  &:hover {
+    background: #001800;
+    background: linear-gradient(0deg, #001800 96%, #65fd2d 100%);
+    padding: 12px 25px;
+    transition: 0.3s;
+  }
+}
+
+/* Main container/contact section */
+main {
+  border-radius: 5px;
+  background-color: grey;
+  padding: 10px;
+  width: 70%;
+  margin: 60px auto;
+  color: whitesmoke;
+  background-image: url('/images/contact-img/cloud-contact-bg.png');
+  height: 100%;
+  background-position: bottom 0 right 0;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/* Create two columns that float next to eachother */
+.column {
+  float: left;
+  width: 50%;
+  margin-top: 6px;
+  padding: 20px;
+  margin: 0 auto;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* For Mobile  under the max screen */
+@media screen and (max-width: 992px) {
+
+  main {
+    width: 100%;
+  }
+
+  .column,
+  input[type=submit] {
+    width: 100%;
+    margin-top: 0;
+  }
+
+  /*Contact Title*/
+  .contact-title {
+    font-size: 7vw;
+  }
+
+  /*Contact Description*/
+  .contact-desp {
+    font-size: 5vw;
+  }
+}

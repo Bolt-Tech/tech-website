@@ -1,0 +1,46 @@
+@import "../Base/header";
+@import "../Base/footer";
+@import "../Base/layout";
+
+/* About - Paragraph Section */
+.about-page {
+    margin: 80px auto;
+    padding: 50px 0px 50px 0px;
+    display: inline-block;
+    border: black 3px solid;
+    width: 80%;
+    height: 100%;
+    max-width: 100%;
+    background-color: whitesmoke;
+    border-radius: 30px;
+    position: relative;
+    left: 50%;
+    right: 50%;
+    transform: translate(-50%, 0%); //This will position container in the center
+}
+
+.about-title {
+    font-size: 5vw;
+    text-align: center;
+}
+
+.Paragraph {
+    text-align: left;
+    padding: 10px 40px 0 40px;
+    font-size: 4vw;
+}
+
+.space { /*Space between content and footer*/
+    min-height: calc(20vh - 70px);
+}
+
+/*Desktop*/
+@media screen and (min-width: 992px) {
+    .about-title {
+        font-size: 2vw;
+    }
+
+    .Paragraph {
+        font-size: 1.2vw;
+    }
+}

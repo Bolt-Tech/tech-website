@@ -1,0 +1,149 @@
+.menu-logo {
+	display: flex;
+	justify-content: start;
+	height: 50px;
+}
+
+/* Website Search */
+nav .search-container {
+	float: right;
+}
+
+nav input[type=text] {
+	padding: 6px;
+	margin-top: 20px;
+	font-size: 17px;
+	border: none;
+	background-color: orange;
+	color: #333;
+}
+
+nav .search-container button {
+	float: right;
+	padding: 6px 10px;
+	margin-top: 20px;
+	margin-right: 16px;
+	background: #c08d00d7;
+	font-size: 17px;
+	border: none;
+	cursor: pointer;
+	color: brown;
+}
+
+nav .search-container button:hover {
+	background: #ffd900;
+	transition: 0.3s;
+}
+/* Website Search End */
+
+nav {
+	overflow: hidden;
+	background-color: #333;
+	display: block;
+	background: #333 url(/images/header-footer-bg/particles-bg.png);
+	background-attachment: fixed;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+/*navigation items a(like buttons)*/
+nav a {
+	display: block;
+	text-align: center;
+	padding: 12px 12px;
+	text-decoration: none;
+	font-size: 17px;
+	border-radius: 5px;
+	float: left;
+	margin: 0 10px 0 0;
+	line-height: 50px;
+
+	position: relative;
+	outline: none;
+	cursor: pointer;
+	overflow: hidden;
+	transition: 0.6s;
+	color: #ce5c0c;
+	border-color: #ce5c0c;
+
+	&:hover {
+		background: #ce5c0c;
+		color: #f2f2f2;
+		transition: 0.3s;
+		border-radius: 10px;
+		-webkit-box-shadow: -1px 2px 8px 9px darkorange;
+		-moz-box-shadow: -1px 2px 8px 9px darkorange;
+		box-shadow: -1px 2px 8px 9px darkorange;
+	}
+}
+
+nav a.active {
+	background-color: darkorange;
+	color: white;
+
+	&:hover {
+		background-color: #ce5c0c;
+		transition: 0.3s;
+		border-radius: 10px;
+	}
+}
+
+nav .icon {
+	display: none;
+}
+
+@media screen and (max-width: 992px) {
+
+	/* Website Search */
+	nav .search-container {
+		float: none;
+	}
+
+	nav .search-container input[type=text],
+	nav .search-container button {
+		float: none;
+		display: block;
+		text-align: center;
+		width: 90%;
+		margin: 0 auto;
+		padding: 14px 0;
+		border-radius: 10px;
+	}
+
+	nav .search-container input[type=text] {
+		border: 0.5px solid orangered;
+	}
+
+	/*Top container navigation*/
+	nav.responsive {
+		transition: 0.4s;
+	}
+
+	/*End of search responsive css*/
+
+	nav a:not(:first-child) {
+		display: none;
+	}
+
+	nav a.icon {
+		float: right;
+		display: block;
+		line-height: 20px;
+		padding: 27px;
+	}
+
+	nav.responsive .icon {
+		position: absolute;
+		right: 0;
+		top: 0;
+	}
+
+	nav.responsive a {
+		float: none;
+		display: block;
+		text-align: center;
+	}
+}
+
+/*End Of mobile responsive css*/

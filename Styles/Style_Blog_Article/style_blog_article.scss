@@ -1,0 +1,91 @@
+@import "../Base/header";
+@import "../Base/footer";
+@import "../Base/layout";
+
+/* Blog - Paragraph Section by my hand */
+
+.blog-box {
+    margin: 5px 5px auto;
+    padding: 50px 0px 100px 0px;
+    display: inline-block;
+    border: black 3px solid;
+    width: 98%;
+    height: 100%;
+    max-width: 100%;
+    background-color: whitesmoke;
+    border-radius: 10px;
+}
+
+.blog-title {
+    font-size: 5vw;
+    color: whitesmoke;
+    text-align: center;
+}
+
+/*Paragraph of the blog*/
+.blog-texts {
+    text-align: left;
+    padding: 10px 35px 0 40px;
+    font-size: 4vw;
+}
+
+/*Headline Blog inside box*/
+.blog-headline {
+    font-size: 4.8vw;
+    font-weight: bolder;
+    color: black;
+    font-family: Cambria;
+    text-align: center;
+    padding: 0 40px 0 20px;
+}
+
+.title-img img {
+    width: 40%;
+}
+
+/*Caption under image*/
+.caption {
+    font-size: 2vw;
+    color: darkgray;
+    font-weight: 200;
+    padding: 10px 0 40px 0;
+}
+
+.video-blog,
+iframe {
+    width: 90%;
+    height: 300px;
+}
+
+
+.author {
+    font-weight: bold;
+    text-decoration: none;
+}
+
+
+
+/*Desktop*/
+@media only screen and (min-width: 992px) {
+    .blog-box {
+        margin: 5px 15% auto;
+        width: 70%;
+    }
+
+    .blog-title {
+        font-size: 1.8vw;
+    }
+
+    .blog-headline {
+
+        font-size: 1.5vw;
+    }
+
+    .caption {
+        font-size: 1vw;
+    }
+
+    .blog-texts {
+        font-size: 1.2vw;
+    }
+}
