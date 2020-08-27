@@ -1,0 +1,110 @@
+<!-------------|
+| Contact Form |
+|-------------->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="keywords" content="footer, address, phone, icons" />
+  <link rel="shortcut icon" href="../images/Logo/bolt_tech_favicon_d1S_icon.ico"/>
+
+  <title>Contact Us</title>
+  <!--CSS Style Links & Javascript-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Arimo&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../Styles/Style_Contact/style_contact.css">
+</head>
+
+<body>
+
+  <!-- [Header Navigation Menu] -->
+  <header></header>
+
+  <!--Contact Form Container-->
+  <main>
+      <!--Main Contact Title & Description-->
+      <p class="contact-title">Contact Us</p>
+      <p class="contact-desp"> Need questions? Please, leave us a message:</p>
+
+    <div class="row">
+
+      <div id="contactForm" class="column">
+
+        <form id="formInfo" action="#Server" method="get" target="_blank">
+
+          <!--First Name & Last Name-->
+          <label for="fname">First Name</label>
+          <span id="errorFName" class="error" aria-live="polite"></span>
+          <input type="text" id="fname" name="firstname" placeholder="Your name.." required minlength="2" maxlength="20">
+          
+          <label for="lname">Last Name</label>
+          <span id="errorLName" class="error" aria-live="polite"></span>
+          <input type="text" id="lname" name="lastname" placeholder="Your last name.." required minlength="2" maxlength="20">
+          
+          <!--Phone Number-->
+          <label for="phone">Phone number:</label>
+          <span id="errorPhone" class="error" aria-live="polite"></span>
+          <input type="tel" id="phone" name="phone" placeholder="Example: 052-1234567" maxlength="10" required>
+          
+
+          <!--Email-->
+          <label for="mail">
+            <span>Please enter an email address:</span>
+            <span id="errorMail" class="error" aria-live="polite"></span>
+            <input type="text" class="mail" id="mail" name="mail" placeholder="example@domain.com" required>
+          </label>
+
+          <!--Gender Radio-->
+          <label for="gender">Gender: </label>
+          <input type="radio" id="male" name="gender" value="male">
+          <label for="male">Male</label>
+          <input type="radio" id="female" name="gender" value="female">
+          <label for="female">Female</label>
+
+          <!--Country Dropdown-->
+          <div class="select-country">
+          <label for="country">Country</label>
+          <span id="errorCountry" class="error" aria-live="polite"></span>
+          <select id="country" name="country" required>
+            <option value="">Select Country...</option>
+            <option value="australia">Australia</option>
+            <option value="canada">Canada</option>
+            <option value="china">China</option>
+            <option value="egypt">Egypt</option>
+            <option value="france">France</option>
+            <option value="germany">Germany</option>
+            <option value="india">India</option>
+            <option value="ireland">Ireland</option>
+            <option value="israel">Israel</option>
+            <option value="japan">Japan</option>
+            <option value="jordan">Jordan</option>
+            <option value="spain">Spain</option>
+            <option value="tanzania">Tanzania</option>
+            <option value="ua">United Arab Emirates</option>
+            <option value="uk">United Kingdom</option>
+            <option value="usa">United States of America</option>
+          </select>
+        </div>
+
+          <!--Text Area-->
+          <label for="subject">Subject</label>
+          <span id="errorSubject" class="error" aria-live="polite"></span>
+          <textarea id="subject" name="subject" placeholder="Write something..." style="height:170px"></textarea>
+          
+          <input type="submit" value="Submit" id="submitBtn" onclick="validateForm();">
+        </form>
+      </div>
+    </div>
+  </main>
+
+  <!-- [Footer Bottom] -->
+  <footer class="footer-distributed"></footer>
+  
+  <script src="script_website.js"></script>
+</body>
+
+</html>

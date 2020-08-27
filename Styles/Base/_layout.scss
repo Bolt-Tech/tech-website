@@ -1,0 +1,17 @@
+* {
+    font-family: 'Arimo', sans-serif;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url('/images/bg-all-pages/greyHexagon.png');
+    background-color: #616161;
+    margin: 0 auto;
+    height: 100%;
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}

@@ -1,0 +1,57 @@
+@import "../Base/header";
+@import "../Base/footer";
+@import "../Base/layout";
+
+/* About - Paragraph Section */
+.terms-page {
+    margin: 50px 5px;
+    padding: 50px 0px 50px 0px;
+    display: inline-block;
+    border: black 3px solid;
+    width: 80%;
+    height: 100%;
+    max-width: 100%;
+    background-color: whitesmoke;
+    border-radius: 20px;
+    position: relative;
+    left: 50%;
+    right: 50%;
+    transform: translate(-50%, 0%); //This will position container in the center
+}
+
+.terms-title {
+    font-size: 3.5vw;
+    text-align: center;
+}
+
+.Paragraph{
+    text-align: left;
+    padding: 20px 50px 0 50px;
+    font-size: 3.5vw;
+}
+
+.terms-list {
+    font-size: 4.1vw;
+    color: black;
+    font-family: Verdana;
+
+}
+
+/*Desktop*/
+@media screen and (min-width: 992px) {
+    .terms-title {
+        font-size: 2vw;
+    }
+
+    .Paragraph{
+        text-align: left;
+        font-size: 1.3vw;
+    }
+    
+    .terms-list {
+        font-size: 1.6vw;
+        color: black;
+        font-family: Verdana;
+    
+    }
+}

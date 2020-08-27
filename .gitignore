@@ -1,0 +1,6 @@
+#Ignore Visual Studio Preference Settings
+.vscode/
+
+#Ignore .css and .css.map files that compass generates
+*.css
+*.css.map

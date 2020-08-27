@@ -1,0 +1,107 @@
+@import "../Base/header";
+@import "../Base/footer";
+@import "../Base/layout";
+
+.title-shopping {
+  text-align: center;
+  margin: 50px auto;
+  width: 100%;
+  text-decoration: underline;
+  font-size: 3vw;
+  color: whitesmoke;
+}
+
+// Shopping Page Container
+.container-store {
+  border: solid grey 2px;
+  background-color: #B5B2B2E6;
+  width: 100%;
+  color: black;
+}
+
+.headline-store {
+  font-weight: bolder;
+  text-align: center;
+  width: 100%;
+}
+
+.date-store {
+  display: flex;
+  justify-content: right;
+}
+
+.pic-store {
+  display: block;
+  float: left;
+}
+
+.pic-store img {
+  width: 100%;
+  height: 25vh;
+}
+
+.text-store,
+.pic-store,
+.date-store {
+  padding: 5px 40px 10px 40px;
+  font-size: 3vw;
+}
+
+.text-middle {
+  padding: 15px 0 0 0;
+}
+
+//Price under image
+.price-store {
+  color: crimson;
+  font-weight: 600;
+}
+
+.strike {
+  text-decoration: line-through;
+  color: black;
+}
+
+//Purchase Button
+.button {
+  background-color: rgb(28, 83, 201);
+  border: none;
+  border-radius: 5px;
+  color: white;
+  padding: 15px 25px;
+  text-align: center;
+  font-size: 4vw;
+  position: relative;
+  top: 0%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-20%);
+  margin: 10px auto;
+  cursor: pointer;
+
+  &:hover {
+    background-color: rgb(12, 34, 161);
+    transition: 0.3s;
+    font-weight: bolder;
+  }
+}
+
+/*Desktop*/
+@media only screen and (min-width: 992px) {
+
+  .container-store {
+    margin: 0 auto;
+    width: 70%;
+
+  }
+
+  .text-store,
+  .date-store {
+    padding: 5px 40px 10px 40px;
+    font-size: 1.5vw;
+  }
+
+  //Purchase Button
+  .button {
+    font-size: 1.5vw;
+  }
+}
