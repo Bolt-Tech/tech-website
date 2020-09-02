@@ -135,7 +135,7 @@ function footerBottom() {
   //Footer Icons & Info Details
   footerMenu += `
   </p>
-      <p class="footer-company-name">Bolt-Tech created by Alaa Murrar &copy; 2020. All rights reserved.</p>
+      <p class="footer-company-name">Bolt-Tech created by Alaa Murrar &copy; ${new Date().getFullYear()}. All rights reserved.</p>
     </div>
 
     <div class="footer-center">
