@@ -11,7 +11,7 @@ It is responsive with smartphone and tablet. It may not look perfect, but I did 
 It's been created in first and second semesters at college with excellent score.
 
 ## Demo
-Try out demo at [Forecast Web App](https://bolt-tech-web.netlify.app/).
+Try out demo at [High-Tech Blog](https://bolt-tech-web.netlify.app/).
 
 ![Covid-19 Statistic Demo](./images/demo_tech-website.gif)
 
