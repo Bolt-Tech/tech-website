@@ -10,6 +10,12 @@ Explore my first simple website that has been created from scratch using the fol
 It is responsive with smartphone and tablet. It may not look perfect, but I did my best to make a web design adaptable to small screens.
 It's been created in first and second semesters at college with excellent score.
 
+## Demo
+Try out demo at [Forecast Web App](https://bolt-tech-web.netlify.app/).
+
+![Covid-19 Statistic Demo](./images/demo_tech-website.gif)
+
+
 ## Getting Started
 
 You can view my live website directly by clicking [Tech-Website](https://bolt-tech-web.netlify.app/) hosted by Netlify.
